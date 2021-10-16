@@ -22,6 +22,6 @@ export const computePairAddress = ({
       ['bytes'],
       [pack(['address', 'address'], [token0.address, token1.address])]
     ),
-    INIT_CODE_HASH
+    INIT_CODE_HASH[token0.chainId]
   )
 }
